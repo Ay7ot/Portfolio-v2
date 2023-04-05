@@ -5,7 +5,7 @@ export const projects: ProjectType[] = [
     {
         name: 'ProTaskMate',
         id: nanoid(),
-        description: 'A task Management web app that applies the kanban methodology to sort tasks. Deployed as a full stack appllication with firebase for the database, hosting and user authentication. Built using Reactjs, Typescript, Firebase, TailwindCSS and ContextAPI',
+        description: 'A task Management web app that applies the kanban methodology to sort tasks. Deployed as a full stack application with firebase for the database, hosting and user authentication. Built using Reactjs, Typescript, Firebase, TailwindCSS and ContextAPI',
         github: 'https://github.com/Ay7ot/protaskmate/',
         liveLink: 'https://protaskmate.web.app',
         image: 'protaskmate.png'

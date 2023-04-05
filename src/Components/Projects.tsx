@@ -5,7 +5,7 @@ export default function Projects() {
     
     return (
         <div id='projects' className='p-4 md:px-10 xl:px-[10%]'>
-            <h2 className='text-center text-neutral-content my-10 text-4xl tracking-wide font-semibold'>Projects</h2>
+            <h2 className='text-center text-neutral-content my-10 text-5xl tracking-wide font-bold'>Projects</h2>
             <div className='md:grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-6'>
                 {projects.map(project=>{
                     return (
@@ -23,8 +23,8 @@ export default function Projects() {
                                 <p className='text-lg font-semibold text-neutral-content mt-4'>{project.description}</p>
                             </div>
                             <div className='p-4 flex gap-3 items-center'>
-                                <a href={project.liveLink} target='blank' className='btn btn-accent'>Live Link</a>
-                                <a href={project.github} target='blank' className='btn btn-accent'>GitHub</a>
+                                <a href={project.liveLink} target='blank' className='btn'>Live Link</a>
+                                <a href={project.github} target='blank' className='btn'>GitHub</a>
                             </div>
                         </div>
                     )
