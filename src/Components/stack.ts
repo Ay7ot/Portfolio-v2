@@ -49,4 +49,14 @@ export const stacks = [
         href: 'https://www.w3.org/Style/CSS/',
         image: 'https://cdn.svgporn.com/logos/css-3.svg'
     },
+    {
+        name: 'Netlify',
+        href: 'https://app.netlify.com/',
+        image: 'https://cdn.svgporn.com/logos/netlify.svg'
+    },
+    {
+        name: 'Sass',
+        href: '/',
+        image: 'https://cdn.svgporn.com/logos/sass.svg'
+    },
 ]
