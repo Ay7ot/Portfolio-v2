@@ -26,7 +26,7 @@ export default function Themes() {
     const themes = ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"]
    
     return (
-        <div ref={modalRef} className='mt-16 shadow-2xl w-52 overflow-y-scroll no-scrollbar rounded-box bg-base-200 text-base-content max-h-[650px] md:max-h-[550px]'>
+        <div ref={modalRef} className='shadow-2xl w-52 overflow-y-scroll no-scrollbar rounded-box bg-base-200 text-base-content max-h-[650px] md:max-h-[550px]'>
             <ul className='p-4 flex flex-col'>
                 {themes.map(theme=>{
                     return (

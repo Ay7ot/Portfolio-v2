@@ -17,6 +17,11 @@ export function appReducer(state: AppContextType, action: AppActionType){
                 ...state,
                 themeModal: false
             }
+        case 'setNavModalTrue':
+            return {
+                ...state,
+                navModal: true
+            }
         default : return state
     }
 }

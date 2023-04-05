@@ -10,7 +10,7 @@ export type ProjectType = {
 export type AppContextType = {
     theme: string;
     dispatch: React.Dispatch<AppActionType>;
-    themeModal: boolean
+    themeModal: boolean;
 }
 
 export type AppActionType = {

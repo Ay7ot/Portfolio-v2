@@ -9,7 +9,7 @@ export default function Projects() {
             <div className='md:grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-6'>
                 {projects.map(project=>{
                     return (
-                        <div className='mb-10 bg-secondary md:bg-secondary-focus text-accent-content flex flex-col overflow-hidden relative rounded-2xl'>
+                        <div key={project.id} className='mb-10 bg-secondary md:bg-secondary-focus text-accent-content flex flex-col overflow-hidden relative rounded-2xl'>
                             <div>
                                 <img 
                                     src={project.image}

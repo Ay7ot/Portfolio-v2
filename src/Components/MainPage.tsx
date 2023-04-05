@@ -6,11 +6,10 @@ import Footer from './Footer'
 import BottomNav from './BottomNav'
 import TechStack from './TechStack'
 import { useAppContext } from '../AppContext'
+import Contact from './Contact'
 
 export default function MainPage() {
-    const { theme, themeModal } = useAppContext()
-
-    console.log(themeModal)
+    const { theme } = useAppContext()
     
     return (
         <div data-theme={theme} className='bg-base-300 relative min-h-screen'>
@@ -18,6 +17,7 @@ export default function MainPage() {
         <Header />
         <Projects />
         <TechStack />
+        <Contact />
         <BottomNav />
         <Footer />
         </div>

@@ -3,9 +3,9 @@ import { appReducer } from "./reducer";
 import { AppContextType } from "./Types/types";
 
 export const AppContext = createContext<AppContextType>({
-    theme: 'forest',
+    theme: 'halloween',
     dispatch: ()=> {},
-    themeModal: false
+    themeModal: false,
 })
 
 export const useAppContext = () => {
