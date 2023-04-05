@@ -28,7 +28,7 @@ export default function Contact() {
     ]
     
     return (
-        <div id='contact'>
+        <div id='contact' className='py-20'>
             <h2 className='text-center text-neutral-content my-10 text-5xl tracking-wide font-bold'>Contact</h2>
             <div className=' flex flex-col items-center pb-6 md:mx-28 mx-4 p-5 rounded-2xl bg-base-100  '>
                 <p>Open to new and exciting oportunities in the tech space. I'm Looking forward to connect with like and unlike minds. You can reach out to me and say hi. I'll definitely respond.</p>

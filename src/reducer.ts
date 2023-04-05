@@ -15,12 +15,24 @@ export function appReducer(state: AppContextType, action: AppActionType){
         case 'setNoModals':
             return {
                 ...state,
-                themeModal: false
+                themeModal: false,
+                shortNav: false,
+                navModal: false
             }
         case 'setNavModalTrue':
             return {
                 ...state,
                 navModal: true
+            }
+        case 'setShortNavTrue':
+            return {
+                ...state,
+                shortNav: true
+            }
+        case 'setHasStarted':
+            return {
+                ...state,
+                hasStarted: true
             }
         default : return state
     }

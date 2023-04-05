@@ -5,21 +5,38 @@ import Projects from './Projects'
 import Footer from './Footer'
 import BottomNav from './BottomNav'
 import TechStack from './TechStack'
+import { useState, useEffect } from 'react';
 import { useAppContext } from '../AppContext'
 import Contact from './Contact'
+import useWindowDimensions from '../windowDimensions'
+import Waiter from './Waiter'
 
 export default function MainPage() {
-    const { theme } = useAppContext()
+    const { theme, hasStarted } = useAppContext()
+    const {width} = useWindowDimensions()
+    
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setIsVisible(true);
+    }, [hasStarted]);
     
     return (
-        <div data-theme={theme} className='bg-base-300 relative min-h-screen'>
-        <Navbar />
-        <Header />
-        <Projects />
-        <TechStack />
-        <Contact />
-        <BottomNav />
-        <Footer />
+        <div className={`fade-in ${isVisible ? 'visible' : ''}`}>
+            <div data-theme={theme} className='bg-base-300 relative min-h-screen'>
+            <Navbar />
+            {hasStarted || width < 768 ? 
+            <>
+                <Header />
+                <Projects />
+                <TechStack />
+                <Contact />
+                <Footer />
+            </>: 
+            <Waiter />
+            }
+            <BottomNav />
+            </div>
         </div>
     )
 }

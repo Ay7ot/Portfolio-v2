@@ -11,6 +11,8 @@ export type AppContextType = {
     theme: string;
     dispatch: React.Dispatch<AppActionType>;
     themeModal: boolean;
+    hasStarted: boolean;
+    shortNav: boolean;
 }
 
 export type AppActionType = {

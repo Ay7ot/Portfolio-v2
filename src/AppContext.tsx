@@ -6,6 +6,8 @@ export const AppContext = createContext<AppContextType>({
     theme: 'halloween',
     dispatch: ()=> {},
     themeModal: false,
+    hasStarted: false,
+    shortNav: false
 })
 
 export const useAppContext = () => {
