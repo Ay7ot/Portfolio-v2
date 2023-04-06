@@ -35,7 +35,7 @@ export default function Contact() {
                 <a href='mailto:ayomidotzee@gmail.com' className='mt-6 btn btn-primary'>
                     Send a Message
                 </a>  
-                <ul className='flex gap-6 items-center mt-6 w-[200px] justify-between'>    
+                <ul className='flex gap-6 items-center mt-6 justify-between'>    
                     {socials.map(item=>{
                         return (
                             <a href={item.url} key={item.id} className='btn'>
