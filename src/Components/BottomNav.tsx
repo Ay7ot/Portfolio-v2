@@ -12,18 +12,30 @@ export default function BottomNav() {
         dispatch({
             type: 'setNoModals'
         })
-        dispatch({
-            type: 'setThemeModalTrue',
-        })
+        if(themeModal){
+            dispatch({
+                type: 'setThemeModalFalse',
+            }) 
+        }else {
+            dispatch({
+                type: 'setThemeModalTrue',
+            })
+        }
     }
 
     function setShortNav(){
         dispatch({
             type: 'setNoModals'
         })
-        dispatch({
-            type: 'setShortNavTrue'
-        })
+        if(shortNav){
+            dispatch({
+                type: 'setShortNavFalse'
+            })
+        }else {
+            dispatch({
+                type: 'setShortNavTrue'
+            })
+        }
     }
 
     console.log(shortNav)
