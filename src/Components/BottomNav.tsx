@@ -26,8 +26,6 @@ export default function BottomNav() {
         })
     }
 
-    console.log(shortNav)
-
     return (
        <>
         <div className='fixed z-[99999999] bottom-0 left-0 rounded-box flex items-center gap-10 bg-base-200 px-10 py-4'>
