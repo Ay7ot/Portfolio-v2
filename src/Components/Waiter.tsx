@@ -51,18 +51,18 @@ export default function Waiter() {
                 <Circles /> 
                 <div className='flex items-center gap-10 mt-6'>
                     <span className='text-[#d5d5d5b9]'>$</span>
-                    <p className='text-neutral-content'>yarn init Aydot</p>
+                    <p className='text-neutral-content font-semibold'>yarn init Aydot</p>
                 </div>
                 {!hideone && 
                     <div className='flex items-center gap-10 mt-6'>
                         <span className='text-[#d5d5d5b9]'>$</span>
-                        <p className='text-accent'>installing</p>
+                        <p className='text-accent-neutral font-semibold'>installing</p>
                     </div>
                 }
                 {!hidetwo && 
                     <div className='flex items-center gap-10 mt-6'>
                         <span className='text-[#d5d5d5b9]'>$</span>
-                        <p className='text-success'>done!</p>
+                        <p className='text-success font-semibold'>done!</p>
                     </div>
                 }
             </div>

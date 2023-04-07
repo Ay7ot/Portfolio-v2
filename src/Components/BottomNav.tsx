@@ -39,7 +39,6 @@ export default function BottomNav() {
     }
 
     return (
-       <>
         <div className='fixed z-[99999999] bottom-0 left-0 rounded-box flex items-center gap-10 bg-base-200 px-10 py-4'>
             <div onClick={(e)=>{e.stopPropagation(); setShortNav();}} className='text-[1.5rem] btn btn-primary'>
                 <GoThreeBars />
@@ -51,6 +50,5 @@ export default function BottomNav() {
             {themeModal && <div className='transition-all ease-linear delay-150 absolute bottom-20 left-[150px]'><Themes /></div>}
             {shortNav && <div className='transition-all ease-linear delay-150 absolute bottom-20 left-0'><ShortNav /></div>}
         </div>
-       </>
     )
 }
