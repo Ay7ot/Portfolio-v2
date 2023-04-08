@@ -10,6 +10,7 @@ export function useName(name: string){
                 themePayload: newTheme
             }
         })
+        localStorage.setItem('theme', newTheme)
     }
 
     switch(name){

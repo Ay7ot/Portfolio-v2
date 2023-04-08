@@ -2,8 +2,9 @@ import { ReactNode, createContext, useContext, useReducer } from "react";
 import { appReducer } from "./reducer";
 import { AppContextType } from "./Types/types";
 
+const themeInitial = localStorage.getItem('theme')
 export const AppContext = createContext<AppContextType>({
-    theme: 'halloween',
+    theme: themeInitial || 'halloween',
     dispatch: ()=> {},
     themeModal: false,
     hasStarted: false,
