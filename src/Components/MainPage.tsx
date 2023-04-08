@@ -25,7 +25,7 @@ export default function MainPage() {
         <div className={`fade-in ${isVisible ? 'visible' : ''}`}>
             <div data-theme={theme} className='bg-base-300 relative min-h-screen'>
             <Navbar />
-            {hasStarted || width < 768 ? 
+            {hasStarted? 
             <>
                 <Header />
                 <Projects />

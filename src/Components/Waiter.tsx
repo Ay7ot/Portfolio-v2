@@ -46,7 +46,7 @@ export default function Waiter() {
         >
             <div
                 onClick={isStarting}
-                className="bg-primary mt-36 mx-56 lg:mx-64 min-h-[100px] rounded-box cursor-pointer p-6"
+                className="bg-primary mt-36 mx-10 md:mx-56 lg:mx-64 min-h-[100px] rounded-box cursor-pointer p-6"
             >
                 <Circles /> 
                 <div className='flex items-center gap-10 mt-6'>
