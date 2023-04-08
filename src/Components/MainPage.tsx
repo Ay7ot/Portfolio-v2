@@ -16,23 +16,30 @@ export default function MainPage() {
     const {width} = useWindowDimensions()
     
     const [isVisible, setIsVisible] = useState(false);
+    const [showMain, setShowMain] = useState(false)
 
     useEffect(() => {
         setIsVisible(true);
     }, [hasStarted]);
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setShowMain(true)
+        },5000)
+    },[hasStarted])
     
     return (
         <div className={`fade-in ${isVisible ? 'visible' : ''}`}>
             <div data-theme={theme} className='bg-base-300 relative min-h-screen'>
             <Navbar />
-            {hasStarted? 
-            <>
+            {hasStarted ? 
+            <div className={`fade-in ${showMain ? 'visible' : 'invisible'}`}>
                 <Header />
                 <Projects />
                 <TechStack />
                 <Contact />
                 <Footer />
-            </>: 
+            </div>: 
             <Waiter />
             }
             <BottomNav />
