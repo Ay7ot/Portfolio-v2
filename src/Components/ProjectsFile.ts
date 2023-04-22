@@ -19,6 +19,14 @@ export const projects: ProjectType[] = [
         image: 'aydot-musica.png'
     },
     {
+        name: 'BookWormz',
+        id: nanoid(),
+        description: 'An open book library where users can search for books, read books, download and download them. Built using Reactjs, Typescript, VanillaCSS, ContextAPI and dbooks openAPI',
+        github: 'https://github.com/Ay7ot/bookwormz',
+        liveLink: 'https:/bookwormz.netlify.app',
+        image: 'bookWormz.png'
+    },
+    {
         name: 'Trivia',
         id: nanoid(),
         description: 'A trivia web app built after completing the react course on the scrimba platform. Built with Reactjs, VanillaCSS and OpenDB trivia api',
@@ -34,14 +42,14 @@ export const projects: ProjectType[] = [
         liveLink: 'https://spandors-tenzie.netlify.app',
         image: 'spandors-tenzie.png'
     },
-    {
-        name: 'Tick Tasks',
-        id: nanoid(),
-        description: 'A small to-do web app made to practice working with firebase database and authentication services. Users can sign in and perform basic CRUD operations with their tasks. Built with Reactjs, Typescript, Firebase, TailwindCSS and ContextAPI',
-        github: 'https://github.com/Ay7ot/firebase-database',
-        liveLink: 'https://tick-tasks.netlify.app',
-        image: 'tickTasks.png'
-    },
+    // {
+    //     name: 'Tick Tasks',
+    //     id: nanoid(),
+    //     description: 'A small to-do web app made to practice working with firebase database and authentication services. Users can sign in and perform basic CRUD operations with their tasks. Built with Reactjs, Typescript, Firebase, TailwindCSS and ContextAPI',
+    //     github: 'https://github.com/Ay7ot/firebase-database',
+    //     liveLink: 'https://tick-tasks.netlify.app',
+    //     image: 'tickTasks.png'
+    // },
     {
         name: 'Food ways',
         id: nanoid(),

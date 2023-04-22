@@ -7,7 +7,7 @@ export default function Navbar() {
 
     return (
         <div className='sticky top-0 z-[999999] mb-2 shadow-lg text-neutral-content bg-neutral-focus rounded-b-box flex justify-between items-center p-4 font-semibold md:px-10'>
-            <p className='text-[1.5rem]'>Aydot</p>
+            <p className='text-[1.5rem] font-bold'>AY<span className='text-primary'>DOT</span></p>
             <nav className='hidden md:flex'>
                 <ul className='flex gap-6 relative'>
                     <a href='#header' className='flex items-center gap-2 cursor-pointer hover:rounded-lg hover:bg-accent-content p-2'>
