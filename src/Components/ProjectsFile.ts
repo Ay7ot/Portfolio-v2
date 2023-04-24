@@ -23,7 +23,7 @@ export const projects: ProjectType[] = [
         id: nanoid(),
         description: 'An open book library where users can search for books, read books, download and download them. Built using Reactjs, Typescript, VanillaCSS, ContextAPI and dbooks openAPI',
         github: 'https://github.com/Ay7ot/bookwormz',
-        liveLink: 'https:/bookwormz.netlify.app',
+        liveLink: 'https://bookwormz.netlify.app',
         image: 'bookWormz.png'
     },
     {
