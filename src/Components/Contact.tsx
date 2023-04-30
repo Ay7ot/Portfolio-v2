@@ -22,7 +22,7 @@ export default function Contact() {
         },
         {
             name: 'Twitter',
-            url: 'https://twitter.com/Ay7ot',
+            url: 'https://twitter.com/TeyeAyo',
             id: nanoid()
         },
     ]
