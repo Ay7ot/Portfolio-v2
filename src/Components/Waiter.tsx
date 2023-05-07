@@ -1,6 +1,7 @@
 import { FiInfo } from 'react-icons/fi';
 import { useAppContext } from '../AppContext';
 import { useState } from 'react';
+import { FaCaretRight } from 'react-icons/fa';
 
 export default function Waiter() {
     const { dispatch } = useAppContext();
@@ -55,13 +56,13 @@ export default function Waiter() {
                 </div>
                 {!hideone && 
                     <div className='flex items-center gap-10 mt-6'>
-                        <span className='text-[#d5d5d5b9]'>$</span>
+                        <span className='text-[#d5d5d5b9]'><FaCaretRight /></span>
                         <p className='text-accent-neutral font-semibold'>installing</p>
                     </div>
                 }
                 {!hidetwo && 
                     <div className='flex items-center gap-10 mt-6'>
-                        <span className='text-[#d5d5d5b9]'>$</span>
+                        <span className='text-[#d5d5d5b9]'><FaCaretRight /></span>
                         <p className='text-success font-semibold'>done!</p>
                     </div>
                 }

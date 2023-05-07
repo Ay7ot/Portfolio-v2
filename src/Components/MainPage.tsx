@@ -8,12 +8,10 @@ import TechStack from './TechStack'
 import { useState, useEffect } from 'react';
 import { useAppContext } from '../AppContext'
 import Contact from './Contact'
-import useWindowDimensions from '../windowDimensions'
 import Waiter from './Waiter'
 
 export default function MainPage() {
     const { theme, hasStarted } = useAppContext()
-    const {width} = useWindowDimensions()
     
     const [isVisible, setIsVisible] = useState(false);
     const [showMain, setShowMain] = useState(false)
@@ -39,7 +37,8 @@ export default function MainPage() {
                 <TechStack />
                 <Contact />
                 <Footer />
-            </div>: 
+            </div>
+            : 
             <Waiter />
             }
             <BottomNav />

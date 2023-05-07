@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div id='header' className='mt-4 flex flex-col lg:flex-row-reverse items-center p-4 md:px-10 gap-6 xl:px-[10%]'>
+    <div id='header' className='fade-out mt-4 flex flex-col lg:flex-row-reverse items-center p-4 md:px-10 gap-6 xl:px-[10%]'>
         <img src='Aydot.jpg' className='max-w-[550px] w-full rounded-xl' alt='A picture of Ayomide Ibiteye'/>
         <div className='text-neutral-content'>
             <h1 className='mb-5 text-5xl font-bold'>Hi there</h1>
