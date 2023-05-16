@@ -23,8 +23,8 @@ export default function Projects() {
                                 <p className='text-lg font-semibold text-neutral-content mt-4'>{project.description}</p>
                             </div>
                             <div className='p-4 flex gap-3 items-center'>
-                                <a href={project.liveLink} target='blank' className='btn'>Live Link</a>
-                                <a href={project.github} target='blank' className='btn'>GitHub</a>
+                                <a href={project.liveLink} target='_blank' className='btn'>Live Link</a>
+                                <a href={project.github} target='_blank' className='btn'>GitHub</a>
                             </div>
                         </div>
                     )
