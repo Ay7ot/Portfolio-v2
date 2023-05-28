@@ -3,14 +3,6 @@ import { ProjectType } from "../Types/types";
 
 export const projects: ProjectType[] = [
     {
-        name: 'Chatty',
-        id: nanoid(),
-        description: 'Chatty is an AI chat assistant that is always ready to help with all your questions.',
-        github: 'https://github.com/Ay7ot/chatty',
-        liveLink: 'https://chattyai.web.app/',
-        image: 'chatty.png',
-        techStack: ['React', 'TypeScript', 'OpenaiAPI', 'TailwindCSS']
-    },{
         name: 'ProTaskMate',
         id: nanoid(),
         description: 'A task Management web app that applies the kanban methodology to sort tasks. Deployed as a full stack application with firebase for the database, hosting and user authentication.',
@@ -18,6 +10,15 @@ export const projects: ProjectType[] = [
         liveLink: 'https://protaskmate.web.app',
         image: 'protaskmate.png',
         techStack: ['React', 'TypeScript', 'Firebase', 'TailwindCSS']
+    },
+    {
+        name: 'Chatty',
+        id: nanoid(),
+        description: 'Chatty is an AI chat assistant that is always ready to help with all your questions.',
+        github: 'https://github.com/Ay7ot/chatty',
+        liveLink: 'https://chattyai.web.app/',
+        image: 'chatty.png',
+        techStack: ['React', 'TypeScript', 'OpenaiAPI', 'TailwindCSS']
     },
     {
         name: 'MoviePitch',

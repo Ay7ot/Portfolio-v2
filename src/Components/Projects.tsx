@@ -35,35 +35,35 @@ export default function Projects() {
                 {projects.map((project, index)=>{
                     return (
                         <div className={`mb-10 bg-secondary md:bg-secondary-focus text-accent-content overflow-hidden flex flex-col relative rounded-2xl ${!seeMore && index >=6 ? 'hidden' : ''}`}>
-                        <AnimationOnScroll animateIn='animate__fadeIn'>
-                            <div key={project.id} className='flex flex-col justify-between'>
-                                <div>
-                                    <img 
-                                        src={project.image}
-                                        height='300'
-                                    />
+                            <AnimationOnScroll animateIn='animate__fadeIn'>
+                                <div key={project.id} className=''>
+                                    <div>
+                                        <img 
+                                            src={project.image}
+                                            height='300'
+                                        />
+                                    </div>
+                                    <div className='p-4'>
+                                        <h3 className='text-base-300 font-bold text-2xl'>
+                                            {project.name}
+                                        </h3>
+                                        <p className='font-semibold text-neutral-content mt-4'>{project.description}</p>
+                                    </div>
+                                    <div className='flex p-4 gap-2'>
+                                        {project.techStack.map((tech, index)=>{
+                                            return (
+                                                <p className={`px-2 py-1 text-xs font-semibold text-neutral-content rounded-md bg-${index === 0 ? 'primary' : index===1 ? 'secondary' : index === 2 ? 'primary' :  'secondary'}`}>
+                                                    {tech}
+                                                </p>
+                                            )
+                                        })}
+                                    </div>
+                                    <div className='p-4 flex gap-3 items-center mt-auto'>
+                                        <a href={project.liveLink} target='_blank' className='btn'><HiOutlineExternalLink /></a>
+                                        <a href={project.github} target='_blank' className='btn'><AiFillGithub /></a>
+                                    </div>
                                 </div>
-                                <div className='p-4'>
-                                    <h3 className='text-base-300 font-bold text-2xl'>
-                                        {project.name}
-                                    </h3>
-                                    <p className='font-semibold text-neutral-content mt-4'>{project.description}</p>
-                                </div>
-                                <div className='flex p-4 gap-2'>
-                                    {project.techStack.map((tech, index)=>{
-                                        return (
-                                            <p className={`px-2 py-1 text-xs font-semibold text-neutral-content rounded-md bg-${index === 0 ? 'primary' : index===1 ? 'secondary' : index === 2 ? 'primary' :  'secondary'}`}>
-                                                {tech}
-                                            </p>
-                                        )
-                                    })}
-                                </div>
-                                <div className='p-4 flex gap-3 items-center mt-auto'>
-                                    <a href={project.liveLink} target='_blank' className='btn'><HiOutlineExternalLink /></a>
-                                    <a href={project.github} target='_blank' className='btn'><AiFillGithub /></a>
-                                </div>
-                            </div>
-                        </AnimationOnScroll>
+                            </AnimationOnScroll>
                         </div>
                     )
                 })}
