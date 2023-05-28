@@ -4,7 +4,8 @@ export type ProjectType = {
     description: string;
     image: string;
     github: string;
-    liveLink: string
+    liveLink: string,
+    techStack: string[]
 }
 
 export type AppContextType = {
@@ -13,11 +14,13 @@ export type AppContextType = {
     themeModal: boolean;
     hasStarted: boolean;
     shortNav: boolean;
+    seeMore: boolean;
 }
 
 export type AppActionType = {
     type: string;
     payload?: {
         themePayload?: string;
+        seeMorePayload?: boolean
     }
 }

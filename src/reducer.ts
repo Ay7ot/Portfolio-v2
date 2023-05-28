@@ -45,6 +45,11 @@ export function appReducer(state: AppContextType, action: AppActionType){
                 ...state,
                 hasStarted: true
             }
+        case 'setSeeMore':
+            return {
+                ...state,
+                seeMore: action.payload?.seeMorePayload ?? false
+            }
         default : return state
     }
 }

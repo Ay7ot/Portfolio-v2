@@ -8,7 +8,8 @@ export const AppContext = createContext<AppContextType>({
     dispatch: ()=> {},
     themeModal: false,
     hasStarted: false,
-    shortNav: false
+    shortNav: false,
+    seeMore: false
 })
 
 export const useAppContext = () => {
