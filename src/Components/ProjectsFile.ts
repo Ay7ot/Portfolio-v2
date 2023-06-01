@@ -56,15 +56,6 @@ export const projects: ProjectType[] = [
         techStack: ['React', 'JavaScript', 'Animation-on-scroll']
     },
     {
-        name: 'Tick Tasks',
-        id: nanoid(),
-        description: 'A small to-do web app made to practice working with firebase database and authentication services. Users can sign in and perform basic CRUD operations with their tasks.',
-        github: 'https://github.com/Ay7ot/firebase-database',
-        liveLink: 'https://tick-tasks.netlify.app',
-        image: 'tickTasks.png',
-        techStack: ['React', 'TypeScript', 'TailwindCSS', 'Firebase']
-    },
-    {
         name: 'Trivia',
         id: nanoid(),
         description: 'A trivia web app built after completing the react course on the scrimba platform.',
@@ -81,6 +72,15 @@ export const projects: ProjectType[] = [
         liveLink: 'https://spandors-tenzie.netlify.app',
         image: 'spandors-tenzie.png',
         techStack: ['React', 'JavaScript', 'VanillaCSS']
+    },
+    {
+        name: 'Tick Tasks',
+        id: nanoid(),
+        description: 'A small to-do web app made to practice working with firebase database and authentication services. Users can sign in and perform basic CRUD operations with their tasks.',
+        github: 'https://github.com/Ay7ot/firebase-database',
+        liveLink: 'https://tick-tasks.netlify.app',
+        image: 'tickTasks.png',
+        techStack: ['React', 'TypeScript', 'TailwindCSS', 'Firebase']
     },
     
 ]
