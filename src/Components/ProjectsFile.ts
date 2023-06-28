@@ -21,14 +21,15 @@ export const projects: ProjectType[] = [
         techStack: ['React', 'TypeScript', 'OpenaiAPI', 'TailwindCSS']
     },
     {
-        name: 'MoviePitch',
+        name: 'Food ways',
         id: nanoid(),
-        description: 'A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.',
-        github: 'https://github.com/Ay7ot/moviePitch',
-        liveLink: 'https://movie-synopsis.netlify.app/',
-        image: 'moviePitch.jpg',
-        techStack: ['React', 'TypeScript', 'TailwindCSS', 'OpenaiAPI']
-    },{
+        description: 'A UI for a food delivery service made to practice working with react components and basic state properties',
+        github: 'https://github.com/Ay7ot/food-ways',
+        liveLink: 'https://food-ways.netlify.app',
+        image: 'food-ways.png',
+        techStack: ['React', 'JavaScript', 'Animation-on-scroll']
+    },
+    {
         name: 'BookWormz',
         id: nanoid(),
         description: 'An open book library where users can search for books, read books, download and download them.',
@@ -47,13 +48,13 @@ export const projects: ProjectType[] = [
         techStack: ['React', 'TypeScript', 'TailwindCSS', 'SpotifyAPI']
     },
     {
-        name: 'Food ways',
+        name: 'MoviePitch',
         id: nanoid(),
-        description: 'A UI for a food delivery service made to practice working with react components and basic state properties',
-        github: 'https://github.com/Ay7ot/food-ways',
-        liveLink: 'https://food-ways.netlify.app',
-        image: 'food-ways.png',
-        techStack: ['React', 'JavaScript', 'Animation-on-scroll']
+        description: 'A simple AI web app done with openaiAPI. Users would input a single sentence for a movie and they would get back a movie title, synopsis, actors and even a poster.',
+        github: 'https://github.com/Ay7ot/moviePitch',
+        liveLink: 'https://movie-synopsis.netlify.app/',
+        image: 'moviePitch.jpg',
+        techStack: ['React', 'TypeScript', 'TailwindCSS', 'OpenaiAPI']
     },
     {
         name: 'Trivia',

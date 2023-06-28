@@ -52,7 +52,7 @@ export default function Projects() {
                                     <div className='flex p-4 gap-2'>
                                         {project.techStack.map((tech, index)=>{
                                             return (
-                                                <p className={`px-2 py-1 text-xs font-semibold text-neutral-content rounded-md bg-${index === 0 ? 'primary' : index===1 ? 'secondary' : index === 2 ? 'primary' :  'secondary'}`}>
+                                                <p key={index} className={`px-2 py-1 text-xs font-semibold text-neutral-content rounded-md bg-${index === 0 ? 'primary' : index===1 ? 'secondary' : index === 2 ? 'primary' :  'secondary'}`}>
                                                     {tech}
                                                 </p>
                                             )
