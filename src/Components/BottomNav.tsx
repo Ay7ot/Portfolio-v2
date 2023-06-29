@@ -47,7 +47,7 @@ export default function BottomNav() {
                 <FaThemeisle />
                 <p className='font-semibold'>Change Theme</p>
             </div>
-            {themeModal && <div className='transition-all ease-linear delay-150 absolute bottom-20 left-[150px]'><Themes /></div>}
+            {themeModal && <div className='transition-all ease-linear delay-150 absolute bottom-[4rem] left-[150px]'><Themes /></div>}
             {shortNav && <div className='transition-all ease-linear delay-150 absolute bottom-20 left-0'><ShortNav /></div>}
         </div>
     )
