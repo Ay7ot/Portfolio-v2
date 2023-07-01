@@ -34,33 +34,37 @@ export default function Projects() {
             <section className='md:grid md:grid-cols-2 lg:grid-cols-3 mt-5 gap-6'>
                 {projects.map((project, index)=>{
                     return (
-                        <div className={`mb-10 bg-secondary md:bg-secondary-focus text-accent-content overflow-hidden flex flex-col relative rounded-2xl ${!seeMore && index >=6 ? 'hidden' : ''}`}>
-                            <AnimationOnScroll animateIn='animate__fadeIn'>
-                                <div key={project.id} className=''>
+                        <div className={`mb-10 bg-secondary md:bg-secondary-focus text-accent-content overflow-hidden relative rounded-2xl md:h-[510px] ${!seeMore && index >=6 ? 'hidden' : ''}`}>
+                            <AnimationOnScroll animateIn='animate__fadeIn' style={{height: '100%'}}>
+                                <div key={project.id} className='flex flex-col h-full'>
                                     <div>
                                         <img 
                                             src={project.image}
-                                            height='300 rounded-t-2xl '
+                                            className=' rounded-t-2xl'
                                         />
                                     </div>
-                                    <div className='p-4'>
-                                        <h3 className='text-base-300 font-bold text-2xl'>
-                                            {project.name}
-                                        </h3>
-                                        <p className='font-semibold text-neutral-content mt-4'>{project.description}</p>
-                                    </div>
-                                    <div className='flex p-4 gap-2'>
-                                        {project.techStack.map((tech, index)=>{
-                                            return (
-                                                <p key={index} className={`px-2 py-1 text-xs font-semibold text-neutral-content rounded-md bg-${index === 0 ? 'primary' : index===1 ? 'secondary' : index === 2 ? 'primary' :  'secondary'}`}>
-                                                    {tech}
-                                                </p>
-                                            )
-                                        })}
-                                    </div>
-                                    <div className='p-4 flex gap-3 items-center mt-auto'>
-                                        <a href={project.liveLink} target='_blank' className='btn'><HiOutlineExternalLink /></a>
-                                        <a href={project.github} target='_blank' className='btn'><AiFillGithub /></a>
+                                    <div className='md:h-[340px] flex flex-col justify-between'>
+                                        <div className='p-4'>
+                                            <h3 className='text-base-300 font-bold text-2xl'>
+                                                {project.name}
+                                            </h3>
+                                            <p className='font-semibold text-neutral-content mt-4'>{project.description}</p>
+                                        </div>
+                                        <div>
+                                            <div className='flex p-4 gap-2'>
+                                                {project.techStack.map((tech, index)=>{
+                                                    return (
+                                                        <p key={index} className={`px-2 py-1 text-xs font-semibold text-neutral-content rounded-md bg-${index === 0 ? 'primary' : index===1 ? 'secondary' : index === 2 ? 'primary' :  'secondary'}`}>
+                                                            {tech}
+                                                        </p>
+                                                    )
+                                                })}
+                                            </div>
+                                            <div className='p-4 flex gap-3 items-center mt-auto'>
+                                                <a href={project.liveLink} target='_blank' className='btn'><HiOutlineExternalLink /></a>
+                                                <a href={project.github} target='_blank' className='btn'><AiFillGithub /></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </AnimationOnScroll>
