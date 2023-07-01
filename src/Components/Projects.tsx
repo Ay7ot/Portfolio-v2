@@ -40,7 +40,7 @@ export default function Projects() {
                                     <div>
                                         <img 
                                             src={project.image}
-                                            height='300'
+                                            height='300 rounded-t-2xl '
                                         />
                                     </div>
                                     <div className='p-4'>
