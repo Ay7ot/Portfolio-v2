@@ -1,4 +1,3 @@
-import React from 'react'
 import { projects } from './ProjectsFile'
 import { useAppContext } from '../AppContext'
 import { AnimationOnScroll } from 'react-animation-on-scroll'

@@ -12,6 +12,15 @@ export const projects: ProjectType[] = [
         techStack: ['React', 'TypeScript', 'Firebase', 'TailwindCSS']
     },
     {
+        name: 'Resumate',
+        id: nanoid(),
+        description: 'A comprehensive resume templating web application that empowers users to create polished and professional resumes effortlessly.',
+        github: 'https://github.com/Ay7ot/resumate/',
+        liveLink: 'https://resumate-io.web.app',
+        image: 'resumate.png',
+        techStack: ['React', 'TypeScript', 'Firebase', 'TailwindCSS',]
+    },
+    {
         name: 'Chatty',
         id: nanoid(),
         description: 'Chatty is an AI chat assistant that is always ready to help with all your questions.',
@@ -19,6 +28,15 @@ export const projects: ProjectType[] = [
         liveLink: 'https://chattyai.web.app/',
         image: 'chatty.png',
         techStack: ['React', 'TypeScript', 'OpenaiAPI', 'TailwindCSS']
+    },
+    {
+        name: 'Pet Groomer',
+        id: nanoid(),
+        description: 'A simple website built for a pet grooming company optimized for calls and emails',
+        github: 'https://github.com/Ay7ot/dogGrooming/',
+        liveLink: 'https://pet-groomer.netlify.app',
+        image: 'dogGroomer.png',
+        techStack: ['React', 'TypeScript', 'Expressjs', 'Animation-on-scroll']
     },
     {
         name: 'Food ways',
