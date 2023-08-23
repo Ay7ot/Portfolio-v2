@@ -1,16 +1,7 @@
 import { nanoid } from "nanoid";
 import { ProjectType } from "../Types/types";
 
-export const projects: ProjectType[] = [
-    {
-        name: 'ProTaskMate',
-        id: nanoid(),
-        description: 'A task Management web app that applies the kanban methodology to sort tasks. Deployed as a full stack application with firebase for the database, hosting and user authentication.',
-        github: 'https://github.com/Ay7ot/protaskmate/',
-        liveLink: 'https://protaskmate.web.app',
-        image: 'protaskmate.png',
-        techStack: ['React', 'TypeScript', 'Firebase', 'TailwindCSS']
-    },
+export const projects: ProjectType[] = [    
     {
         name: 'Resumate',
         id: nanoid(),
@@ -19,6 +10,15 @@ export const projects: ProjectType[] = [
         liveLink: 'https://resumate-io.web.app',
         image: 'resumate.png',
         techStack: ['React', 'TypeScript', 'Firebase', 'TailwindCSS',]
+    },
+    {
+        name: 'ProTaskMate',
+        id: nanoid(),
+        description: 'A task Management web app that applies the kanban methodology to sort tasks. Deployed as a full stack application with firebase for the database, hosting and user authentication.',
+        github: 'https://github.com/Ay7ot/protaskmate/',
+        liveLink: 'https://protaskmate.web.app',
+        image: 'protaskmate.png',
+        techStack: ['React', 'TypeScript', 'Firebase', 'TailwindCSS']
     },
     {
         name: 'Chatty',
