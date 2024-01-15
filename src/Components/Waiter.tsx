@@ -13,11 +13,11 @@ export default function Waiter() {
     function isStarting() {
         setHideOther(true)
 
-        setTimeout(()=>{
+        setTimeout(() => {
             setHideOne(false)
         }, 1000)
 
-        setTimeout(()=>{
+        setTimeout(() => {
             setHideTwo(false)
         }, 2000)
 
@@ -25,11 +25,11 @@ export default function Waiter() {
             dispatch({
                 type: 'setHasStarted',
             });
-        setIsHidden(true);
+            setIsHidden(true);
         }, 3000);
     }
 
-    function Circles(){
+    function Circles() {
         return (
             <div className='flex gap-3'>
                 <div className="bg-[#d5d5d5b9] rounded-full h-2 w-2"></div>
@@ -41,26 +41,25 @@ export default function Waiter() {
 
     return (
         <div
-        className={`ease-in transition-all duration-200 ${
-            isHidden ? 'opacity-0 pointer-events-none' : ''
-        }`}
+            className={`ease-in transition-all duration-200 ${isHidden ? 'opacity-0 pointer-events-none' : ''
+                }`}
         >
             <div
                 onClick={isStarting}
                 className="bg-primary mt-36 mx-10 md:mx-56 lg:mx-64 min-h-[100px] rounded-box cursor-pointer p-6"
             >
-                <Circles /> 
+                <Circles />
                 <div className='flex items-center gap-10 mt-6'>
                     <span className='text-[#d5d5d5b9]'>$</span>
-                    <p className='text-neutral-content font-semibold'>yarn init Aydot</p>
+                    <p className='text-neutral-content font-medium md:font-semibold'>yarn init Ayomide</p>
                 </div>
-                {!hideone && 
+                {!hideone &&
                     <div className='flex items-center gap-10 mt-6'>
                         <span className='text-[#d5d5d5b9]'><FaCaretRight /></span>
                         <p className='text-accent-neutral font-semibold'>installing</p>
                     </div>
                 }
-                {!hidetwo && 
+                {!hidetwo &&
                     <div className='flex items-center gap-10 mt-6'>
                         <span className='text-[#d5d5d5b9]'><FaCaretRight /></span>
                         <p className='text-success font-semibold'>done!</p>
